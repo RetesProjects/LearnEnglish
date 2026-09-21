@@ -7,6 +7,8 @@ import { adjectivesModule } from './adjectives';
 import { linkingVerbsModule } from './linkingVerbs';
 import { irregularVerbsModule } from './irregularVerbs';
 import { extremeAdjectivesModule } from './extremeAdjectives';
+import { accessoriesModule } from './accessories';
+import { patternsMaterialsModule } from './patternsMaterials';
 import { presentPastSimpleModule } from './presentPastSimple';
 
 export const MODULES = [
@@ -14,5 +16,7 @@ export const MODULES = [
   linkingVerbsModule,
   irregularVerbsModule,
   extremeAdjectivesModule,
+  accessoriesModule,
+  patternsMaterialsModule,
   presentPastSimpleModule,
 ];
