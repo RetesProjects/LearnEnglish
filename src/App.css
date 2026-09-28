@@ -281,6 +281,17 @@ body {
   font-size: 0.8rem;
 }
 
+.block-keypoints {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 /* Speak button (Web Speech API) */
 .speak-btn {
   border: none;
@@ -879,4 +890,33 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--accent-dark);
+}
+
+/* Speech mapping: práctica oral cronometrada */
+.oral-keypoints {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.oral-keypoints li {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.oral-timer {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  margin: 0;
+}
+
+.oral-timer-done {
+  color: var(--danger);
 }
