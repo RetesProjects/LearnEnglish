@@ -10,7 +10,6 @@ import { extremeAdjectivesModule } from './extremeAdjectives';
 import { accessoriesModule } from './accessories';
 import { patternsMaterialsModule } from './patternsMaterials';
 import { presentPastSimpleModule } from './presentPastSimple';
-import { speechMappingModule } from './speechMapping';
 
 export const MODULES = [
   adjectivesModule,
@@ -20,5 +19,4 @@ export const MODULES = [
   accessoriesModule,
   patternsMaterialsModule,
   presentPastSimpleModule,
-  speechMappingModule,
 ];
