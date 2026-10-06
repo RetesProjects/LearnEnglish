@@ -18,7 +18,7 @@ npm run preview   # preview the production build
 
 There is no test suite configured in this repo.
 
-Deployment is done by `.github/workflows/deploy.yml`: on every push to `main` (or manual `workflow_dispatch`) it runs on the self-hosted Windows runner `DESKTOP-RRLVCNC` (`runs-on: [self-hosted, Windows]`), does `npm ci` → `npm run lint` → `npm run build`, and publishes `docs/` with `actions/deploy-pages` (Settings → Pages → Source must be **GitHub Actions**). `docs/` is still the Vite build output (`outDir: 'docs'` in `vite.config.js`) and remains committed; don't delete it or add it to `.gitignore` without also deciding to drop it from the repo intentionally.
+`docs/` is committed to the repo on purpose — it's the Vite build output (`outDir: 'docs'` in `vite.config.js`) and is what GitHub Pages serves directly (Settings → Pages → Deploy from branch → `main` / `/docs`), with no CI workflow involved. After changing anything under `src/`, run `npm run build` and commit the updated `docs/` output so the deployed site stays in sync. Don't delete `docs/` or add it to `.gitignore` as "build junk".
 
 ## Architecture: module system
 
