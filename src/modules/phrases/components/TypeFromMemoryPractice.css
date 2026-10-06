@@ -1,0 +1,123 @@
+.tfm-panel,
+.tfm-card {
+  min-width: 0;
+}
+
+.tfm-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.tfm-progress,
+.tfm-prompt-label,
+.tfm-legend {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.tfm-prompt {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.tfm-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  resize: vertical;
+}
+
+.tfm-hint {
+  margin: 0;
+  font-family: monospace;
+  letter-spacing: 0.05em;
+  overflow-wrap: anywhere;
+  color: var(--accent-dark);
+}
+
+.tfm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tfm-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tfm-verdict {
+  margin: 0;
+  font-weight: 700;
+}
+
+.tfm-verdict.is-correct {
+  color: var(--success);
+}
+
+.tfm-verdict.is-wrong {
+  color: var(--danger);
+}
+
+.tfm-diff {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  line-height: 1.6;
+}
+
+.tfm-token {
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.tfm-ok {
+  background: var(--success-bg);
+}
+
+.tfm-missing {
+  background: var(--warning-bg);
+  border: 1px dashed var(--text-muted);
+}
+
+.tfm-wrong {
+  background: var(--danger-bg);
+  text-decoration: underline wavy var(--danger);
+}
+
+.tfm-extra {
+  background: var(--danger-bg);
+  text-decoration: line-through;
+}
+
+.tfm-mark {
+  font-weight: 700;
+}
+
+.tfm-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.tfm-correct {
+  margin: 0;
+  overflow-wrap: anywhere;
+}

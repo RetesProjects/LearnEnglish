@@ -1,0 +1,112 @@
+.word-order-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  min-width: 0;
+}
+
+.word-order-hint {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: var(--warning-bg);
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.word-order-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.word-order-answer,
+.word-order-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.word-order-answer {
+  min-height: 3.5rem;
+  padding: 0.75rem;
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.word-order-answer.is-correct {
+  border-style: solid;
+  border-color: var(--success);
+  background: var(--success-bg);
+}
+
+.word-order-answer.is-wrong {
+  border-style: solid;
+  border-color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.word-order-placeholder {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.word-chip {
+  max-width: 100%;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-panel);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.word-chip:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.word-chip.is-placed {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.word-chip:disabled {
+  cursor: default;
+}
+
+.word-order-feedback {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.word-order-feedback p {
+  margin: 0 0 0.35rem;
+}
+
+.word-order-feedback.is-correct {
+  background: var(--success-bg);
+}
+
+.word-order-feedback.is-wrong {
+  background: var(--danger-bg);
+}
+
+.word-order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.word-order-empty {
+  margin-top: 1rem;
+  color: var(--text-muted);
+}
