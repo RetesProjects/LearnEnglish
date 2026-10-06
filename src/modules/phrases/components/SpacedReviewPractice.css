@@ -1,0 +1,79 @@
+.spaced-review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 100%;
+}
+
+.spaced-progress {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spaced-card,
+.spaced-summary {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  overflow-wrap: anywhere;
+}
+
+.spaced-summary h3,
+.spaced-summary p,
+.spaced-card p {
+  margin: 0;
+}
+
+.spaced-es {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.spaced-en {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.spaced-hint,
+.spaced-empty {
+  color: var(--text-muted);
+}
+
+.spaced-answer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.spaced-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--border);
+  color: var(--text);
+}
+
+.spaced-status-learning {
+  background: var(--warning-bg);
+  color: var(--text);
+}
+
+.spaced-status-mastered {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.spaced-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,26 @@
+.phrases-exam-direction {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.phrases-exam-prompt {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.phrases-exam-options {
+  grid-template-columns: 1fr;
+}
+
+.phrases-exam-options .option-row {
+  min-width: 0;
+}
+
+.phrases-exam-options .option-btn {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: left;
+}

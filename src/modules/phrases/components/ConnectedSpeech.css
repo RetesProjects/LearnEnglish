@@ -1,0 +1,110 @@
+.connected-speech {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  background: var(--bg-panel);
+  color: var(--text);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.cs-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cs-label {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.cs-audio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cs-btn {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.cs-text {
+  margin: 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.cs-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.cs-notes li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.cs-from {
+  color: var(--text-muted);
+}
+
+.cs-type {
+  margin-left: auto;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--border);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.cs-help {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cs-help summary {
+  cursor: pointer;
+}
+
+.cs-help dl {
+  margin: 8px 0 0;
+}
+
+.cs-help dt {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cs-help dd {
+  margin: 0 0 6px;
+}
+
+.cs-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

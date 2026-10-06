@@ -1,0 +1,17 @@
+.memorize-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.memorize-option {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.memorize-option-active {
+  font-weight: 700;
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+}
